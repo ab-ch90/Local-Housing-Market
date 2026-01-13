@@ -14,7 +14,10 @@ Home buyers and small real estate investors struggle to determine whether a list
 * Region: San Diego County, CA
 * Level of Analysis: ZIP-code level housing market analysis
 ## Dataset (Initial)
-* TBD
+* Source: app.regrid.com, San Diego County, CA
+* Records: 21 properties (sample)
+* Data type: property assesor and land-use data
+* Level of Analysis: Parcel/ZIP-code level
 ## Planned Approach
 1. Acquire and inspect raw housing transaction data
 2. Clean and preprocess data using pandas and NumPy
