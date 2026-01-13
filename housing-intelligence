@@ -1,12 +1,1 @@
-housing-intelligence/
-  data/
-      raw/
-      processed/
-  notebooks/
-  src/
-  api/
-  app/
-  readme.md
 
-  git add . 
-  git commit -m "Initial project structure and README"
