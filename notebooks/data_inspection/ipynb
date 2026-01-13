@@ -1,1 +1,17 @@
+import pandas as pd 
 
+df = pd.read_csv("ca_san_diego.sample.csv.zip")
+print("First 5 rows:")
+display(df.head())
+
+print("/nDataset Info:")
+df.info()
+
+print("/nSummary Statistics:")
+display(df.describe())
+
+print("/nColumn Names:")
+print("df.columns.tolist())
+
+print("/nNumber of rows:
+print(len(df))
