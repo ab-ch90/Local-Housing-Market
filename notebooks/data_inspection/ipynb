@@ -8,11 +8,11 @@ print("Columns:", df.shape[1])
 
 df.info() # schema (plan) and missing values
 
-print("/nSummary Statistics:")
+print("\nSummary Statistics:")
 display(df.describe(include="all").T)
 
-print("/nColumn Names:")
-print("df.columns.tolist())
+print("\nColumn Names:")
+print(df.columns.tolist())
 
 # top 20 missing values
 missing = df.isna().sum().sort_values(ascending=False)
