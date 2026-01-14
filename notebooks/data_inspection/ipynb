@@ -1,17 +1,28 @@
 import pandas as pd 
 
 df = pd.read_csv("ca_san_diego.sample.csv.zip")
-print("First 5 rows:")
-display(df.head())
 
-print("/nDataset Info:")
-df.info()
+display(df.head())
+print("Rows:", df.shape[0])
+print("Columns:", df.shape[1])
+
+df.info() # schema (plan) and missing values
 
 print("/nSummary Statistics:")
-display(df.describe())
+display(df.describe(include="all").T)
 
 print("/nColumn Names:")
 print("df.columns.tolist())
 
-print("/nNumber of rows:
-print(len(df))
+# top 20 missing values
+missing = df.isna().sum().sort_values(ascending=False)
+display(missing.head(20).to_frame("missing_count"))
+
+# numerical vs. categorical columns
+numeric_cols = df.select_dtypes(include="number").columns
+categorical_cols = df.select_dtypes(exclude="number").columns 
+
+print("Numeric columns:", len(numeric_cols))
+print("Categorical columns:", len(categorical_cols))
+
+core_fields = ["saleprice","saledata","num_bedrooms","num_bath","num_bath_partial","yearbuilt","improvval","landval","parval","usedesc","zoning"]
