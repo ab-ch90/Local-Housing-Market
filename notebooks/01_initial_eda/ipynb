@@ -1,6 +1,7 @@
 import pandas as pd 
+from IPython.display import display
 
-df = pd.read_csv("ca_san_diego.sample.csv.zip")
+df = pd.read_csv("../data/raw/ca_san_diego.sample.csv.zip",compression="zip")
 
 display(df.head())
 print("Rows:", df.shape[0])
@@ -25,4 +26,9 @@ categorical_cols = df.select_dtypes(exclude="number").columns
 print("Numeric columns:", len(numeric_cols))
 print("Categorical columns:", len(categorical_cols))
 
-core_fields = ["saleprice","saledata","num_bedrooms","num_bath","num_bath_partial","yearbuilt","improvval","landval","parval","usedesc","zoning"]
+core_fields = ["saleprice","saledate","num_bedrooms","num_bath","num_bath_partial","yearbuilt","improvval","landval","parval","usedesc","zoning"]
+
+missing_core = [c for c in core_fields if c not in df.columns]
+print("Missing core fields:",missing_core)
+
+display(df[[c for c in core_fields if c in df.columns]].head())
