@@ -4,10 +4,6 @@ Local Housing Market Intelligence Engine
 * Analyze local housing market trends
 * Predict fair market home prices
 * Explain predictions in a human-readable way
-## Non-Goals
-* Not building a full MLS (multiple listing service) replacement
-* Not guaranteeing real-world pricing accuracy
-* Not supporting every city initially
 ## Initial Market
 * Region: San Diego County, CA
 * Level of Analysis: ZIP-code level housing market analysis
