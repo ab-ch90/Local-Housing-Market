@@ -1,7 +1,5 @@
 # Title
 Local Housing Market Intelligence Engine
-##
-Home buyers and small real estate investors struggle to determine whether a listing price is fair relative to local market trends. Listing platforms show prices, but rarely explain how location, time, and property features interact. This project provides data-driven pricing insights at the ZIP-code level.
 ## Project Goals
 * Analyze local housing market trends
 * Predict fair market home prices
