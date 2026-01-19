@@ -1,0 +1,7 @@
+column,dtype,missing_count,missing_pct,example_value
+yearbuilt,float64,0,0.0,2003.0
+improvval,int64,0,0.0,463382
+landval,int64,0,0.0,446630
+parval,int64,0,0.0,910012
+usedesc,object,0,0.0,Single Family Detached
+zoning,object,0,0.0,AR-1-1
