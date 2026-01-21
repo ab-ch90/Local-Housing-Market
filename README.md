@@ -19,8 +19,10 @@ Local Housing Market Intelligence Engine
   * data/
       * raw/
       * processed/
+  * figures/
   * notebooks/
   * README.md
+  * requirements.txt
 
 ## Tools and Technologies
 * Python
