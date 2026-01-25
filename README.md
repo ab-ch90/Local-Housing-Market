@@ -1,5 +1,5 @@
 # Title
-Local Housing Market Intelligence Engine
+Local Housing Market Analysis
 ## Project Goals
 * Lead and inspect a real public housing dataset
 * Evaluate data quality and identify missing or unusable fields
